@@ -1,6 +1,6 @@
 # Cloudflare Worker project configuration.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
-name = "edge-blog"
+name = "sixblog"
 compatibility_date = "2026-11-10"
 compatibility_flags = ["nodejs_compat"]
 
@@ -38,18 +38,18 @@ crons = ["*/5 * * * *"]
 # D1 — relational data (posts, comments, settings, ...)
 [[d1_databases]]
 binding = "DB"
-database_name = "edge-blog"
-database_id = "055686f4-1e23-4d09-9036-d511d5f02de4"
+database_name = "six-blog"
+database_id = "6f612683-4a81-47c8-88a3-b7221c00d6f4"
 
 # R2 — media library / image uploads
 [[r2_buckets]]
 binding = "MEDIA"
-bucket_name = "edge-blog-media"
+bucket_name = "six-blog-media"
 
 # KV — config cache + rate limiting counters
 [[kv_namespaces]]
 binding = "CACHE"
-id = "17f2c666debb4590be75cfa7d8879ede"
+id = "0970f201f91e411396c1717900e1b383"
 
 # Workers AI — default AI provider (no API key required inside the Worker)
 [ai]
