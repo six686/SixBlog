@@ -22,7 +22,7 @@ export const authRoutes = new Hono<AppEnv>();
  * exist, preventing trivial username enumeration via response latency.
  */
 const DUMMY_HASH =
-  'pbkdf2$sha256$210000$e+h6ecFNC4Zx8Bj914SbRA==$d3WQJL6XKgfBJZIbhxi4qOcn3YQZAu0Z2/pr2GJy2uI=';
+  'pbkdf2$sha256$100000$e+h6ecFNC4Zx8Bj914SbRA==$d3WQJL6XKgfBJZIbhxi4qOcn3YQZAu0Z2/pr2GJy2uI=';
 
 /**
  * Password baked into `seed/seed.sql`. It is public knowledge, so a login that
