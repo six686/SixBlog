@@ -80,7 +80,7 @@ async function deriveBits(
  * is 600k; 210k keeps the Worker CPU budget sane while still being ~2x the old
  * value). Existing hashes keep working and are upgraded on the next login.
  */
-export const PBKDF2_ITERATIONS = 210_000;
+export const PBKDF2_ITERATIONS = 100_000;
 
 export async function hashPassword(
   password: string,
